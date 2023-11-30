@@ -22,7 +22,7 @@ if (fs.existsSync(writeTo)) throw new Error("Already made it doofus");
 fs.mkdirSync(writeTo);
 
 // create README.md template
-fs.writeFileSync(`${writeTo}/README.md`, "");
+fs.writeFileSync(`${writeTo}/README.md`, `# Solutions for day ${day}`);
 
 // create runner files
 fs.writeFileSync(`${writeTo}/1.ts`, runnerFileContent.toString());
